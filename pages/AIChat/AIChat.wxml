@@ -1,0 +1,66 @@
+<!--pages/AIChat/AIChat.wxml-->
+<view class='container_top'>
+
+{{tittle}}
+
+</view>
+ 
+<!-- <scroll-view class='que,scroll_view' style="height: 90%;" scroll-y="true" scroll-into-view="{{toView}} "> -->
+<view class='que' >
+
+
+  <block wx:for="{{syas}}"  wx:for-item="item" wx:key='{{syas}}' id="msg-{{index}}" >
+    <view class='con'>
+      <view class='isay' >
+        <view class='r-t'>
+            <text>{{item.isay}}</text>
+        </view>
+         <view class='r-i'>
+              <image bindtap="redirectToProfile" src='{{headRight}}'></image>
+        </view>
+  
+      </view>
+      <view id="ro" class='robort'>
+         <view class='l-i'>
+            <image bindtap="redirectToProfile" src='{{headLeft}}'></image>
+         </view>
+         <!--van-multi-ellipsis--l3  -->
+         <view class=" l-t">
+            <text>{{item.robot}}</text>
+         </view>
+     </view>
+   </view>
+  </block>
+</view>
+<!-- </scroll-view> -->
+
+
+
+<view class='container_bottom'>
+  <!-- <form bindsubmit='conversation' class="mesSubmit" style="border: 2px bold blue">
+    <input style="width:70%" type='text' class='message_text' placeholder='说点什么吧~' name='says'></input>    
+    <view style="width:30% , height=auto" class="click_part">
+      <button class='btn' id='btn' form-type='submit'>发送</button>
+      <button class='btn-d' bindtap='delectChat' >清空</button>         
+    </view>          
+  </form> -->
+  <form bindsubmit='converSation' style="width:95%">
+  <view style="width:100%;height:100%">
+    <image bindtap="redirectToProfile" src='{{headRight}}' style="float:left ;width:80rpx;height:80rpx; border-radius: 20%;margin-right: 2%;"></image>
+    <input  style="width:70%;height:80rpx ;margin-right:1%" type='text' class='message_text' placeholder='说点什么吧~' name='says' value="{{value}}"></input> 
+    
+    <button hover-class="click_btn" class='btn' id='btn'  form-type='submit' style="width:15%">
+    <span>send
+    </span>
+    </button>
+    
+    
+    
+  </view>
+
+
+          
+  </form>
+  <!-- <button class='btn-d' bindtap='delectChat' style="width:10%;">清空</button>    -->
+  
+</view>

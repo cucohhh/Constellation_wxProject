@@ -1,0 +1,6 @@
+<!--pages/launch/launch.wxml-->
+<text>pages/launch/launch.wxml</text>
+<view>
+  <text>启动界面</text>
+  <text>开机动画</text>
+</view>

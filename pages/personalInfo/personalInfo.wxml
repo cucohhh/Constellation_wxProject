@@ -1,0 +1,6 @@
+<!--pages/personalInfo/personalInfo.wxml-->
+<text>pages/personalInfo/personalInfo.wxml</text>
+<view>
+  <text>个人信息展示页面</text>
+  <text>头像、用户昵称、生日、星座、星座介绍 、</text>
+</view>

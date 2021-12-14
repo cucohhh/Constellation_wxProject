@@ -1,0 +1,85 @@
+<!--pages/register/register.wxml-->
+<!-- <text>首次登录，信息填写注册界面</text>
+<text>头像、用户昵称、生日、星座 （爱好）</text> -->
+<view class="container">
+  <view class="logo_part" animation="{{logo}}">
+    <image src="../../images/llogo.png"></image>
+    <text class="margin_x" style="color: white; font-size: x-large;"> 星友</text>
+    <text class="" style="color: white; font-size: x-large;">Constellation</text>
+  </view>
+  <!-- 微信小程序动画会影响vant 内置js 尝试使用vant自带动画 -->
+  <van-transition class="slide_up_part" duration="1000" show="{{ show_input }}" custom-class="block" name="fade-up">
+    <view class="input_part">
+    <select-popup label="星座" place="请选择星座" columns="{{list}}" bind:confirm="getIndex" valueKeyName="name">
+    </select-popup>
+    <select-date label="生日" place="请选择生日" valueKeyName="name">
+    </select-date>
+    <van-button class="button" color="#7232dd" size="large" type="primary" bind:click="" bindtap="loginJudge">
+      <span style="font-size: 35rpx;">授权登录</span>
+    </van-button>
+  </view>
+  </van-transition>
+  
+
+
+  <!-- <view class="input_part" animation="{{input}}">
+    <view>
+      <select-popup label="星座" place="请选择星座" columns="{{list}}" bind:confirm="getIndex" valueKeyName="name">
+      </select-popup>
+      <select-date label="生日" place="请选择生日" valueKeyName="name">
+      </select-date>
+      <van-button class="button" color="#7232dd" size="large"  type="primary" bind:click="" bindtap="loginJudge" >
+        <span style="font-size: 35rpx;">注册并登录</span>
+      </van-button>
+
+
+    </view>
+
+
+  </view> -->
+  <!-- <view class="container_center" animation="{{test}}">
+    <view class="center_top">
+      
+      <view class="userinfo">
+        <block wx:if="{{canIUseOpenData}}">
+          <view class="userinfo-avatar" bindtap="bindViewTap">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <open-data type="userNickName"></open-data>
+        </block>
+        <block wx:elif="{{!hasUserInfo}}">
+          <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+          <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+          <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+        </block>
+        <block wx:else>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+
+    </view>
+
+
+    <view>
+     
+    </view>
+    <view class="center_bottom">
+      
+      <select-popup label="星座" place="请选择星座" columns="{{list}}" bind:confirm="getIndex" valueKeyName="name">
+      </select-popup>
+      <select-date label="生日" place="请选择生日" valueKeyName="name">
+      </select-date>
+
+ 
+      <van-button class="button" color="#7232dd" size="large"  type="primary" bind:click="" bindtap="loginJudge" >
+        <span style="font-size: 35rpx;">注册并登录</span>
+      </van-button>
+
+
+    </view>
+
+  </view>  -->
+
+
+</view>

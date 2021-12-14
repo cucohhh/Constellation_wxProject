@@ -1,0 +1,23 @@
+/**app.wxss**/
+@import '/miniprogram_npm/vant-weapp/common/index.wxss';
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.margin_x{
+  margin:2%;
+}
+.margin_xx{
+  margin:5%;
+}
+.margin_medium{
+  margin:50rpx;
+}
+

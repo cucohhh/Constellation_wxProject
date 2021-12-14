@@ -1,0 +1,6 @@
+<!--components/select-date/select-date.wxml-->
+
+<van-field label="{{label}}" model:value="{{ date }}" placeholder="{{place}}" border="{{ true }}" readonly right-icon="{{icon}}" bindtap="tap" />
+<van-popup show="{{ popShow }}"  position="bottom" custom-style="height: 30%;overflow:hidden">
+  <van-datetime-picker type="date" id="date_picker" bind:confirm="onConfirm" bind:cancel="onCancel" value="{{ currentDate }}" bind:input="onInput" min-date="{{ minDate }}" formatter="{{ formatter }}" />
+</van-popup>

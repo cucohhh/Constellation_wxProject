@@ -1,0 +1,8 @@
+
+
+<van-field label="{{label}}" model:value="{{ value }}" placeholder="{{place}}" border="{{ true }}" readonly
+  right-icon="{{icon}}" bindtap="tap" />
+  
+<van-popup show="{{ popShow }}"  position="bottom" custom-style="width:100vw;height: 30%;overflow:hidden; margin-bottom:0; z-index:999;">
+  <van-picker value-key="{{valueKeyName}}" id="picker" show-toolbar title="{{label}}" columns="{{ columns }}" bind:cancel="onCancel" bind:confirm="onConfirm" />
+</van-popup>

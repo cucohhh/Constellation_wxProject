@@ -1,0 +1,68 @@
+<!--pages/profile/profile.wxml-->
+
+<view class="all_container">
+
+
+
+  <view class="top_container">
+    <view class="upper_part">
+      <view class="personal_info">
+        <image src='{{userAvatarUrl}}' style="width:160rpx; height: 160rpx; border-radius: 50%; "></image>
+
+        <view class="text_info">
+          <view class="margin_x">
+            <van-icon name="manager" />
+            <text style="margin-left:2vw;font-size:x-large; font-weight: 600; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" > {{nickname}}
+            </text>
+          </view>
+
+
+          <view class="margin_x">
+            <van-icon class="" name="gem" style="color:#D65858" size="large" />
+            <text class="margin_x" style="font-size: medium; font-weight: 600;color:#D914A7 ;padding-bottom:2rpx">规划大师</text>
+
+          </view>
+
+
+        </view>
+
+
+      </view>
+
+
+    </view>
+    <view class="lower_part">
+
+      <text style="color:#a73885; font-weight: 500;">个人简介:</text>
+      <text style="color:#a73885; font-weight: 500;">性格开朗、稳重、有活力，待人热情、真诚;</text>
+    </view>
+
+  </view>
+  <view class="bottom_container">
+    <view class="constellatioin_part">
+      <text style=" color:#030303;font-size: large; font-weight: 600;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">星座图鉴</text>
+      <view class="constellation_content">
+        <view class="margin_xx" style="display: flex; flex-direction: row; align-items: center;">
+          <van-icon name="birthday-cake-o" size="x-large"/>
+          <text class="margin_xx" style="font-size:40rpx; font-weight: 600;color:#8F0CCC">生日：{{birthday}}</text>
+        </view>
+        
+        <view>
+        <text class="margin_xx ,birthday_text" style="font-size: xx-large; font-weight: 700;">{{constellation}}</text>
+        
+        </view>
+        <text class="margin_xx" style="font-size:30rpx; font-weight:500;color:#B54DDB">{{constellationDes}}
+        </text>
+      </view>
+      
+    </view>
+
+    <view class="fortune_part">
+      <text style=" color:#030303;font-size: large; font-weight: 600;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">今日运势</text>
+      <view class="fortune_content">
+      <text class="margin_x" style="font-size: medium; color:rebeccapurple;font-weight: 500;">最近有一个烦恼就是想要换工作。或是你在等公司和上级给你一个回覆，如果你最近可以在原单位升迁或是加薪，或许你就可以打消换工作的念头。
+      </text>
+      </view>
+    </view>
+  </view>
+</view>

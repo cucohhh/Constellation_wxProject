@@ -1,0 +1,233 @@
+/* pages/AIChat/AIChat.wxss */
+/* pages/contact/contact.wxss */
+.container_top{
+  position: fixed;
+  top: 0;
+  height: 10%;
+  width: 100%;
+  line-height: 250rpx;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 5px;
+  color:rgba(2, 2, 5, 0.87);
+  box-shadow: 8px -2px 15px rgb(209, 204, 204)
+}
+ 
+.container_bottom{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color:#ffffff;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px -2px 15px rgb(209, 204, 204);
+  
+  /* border:2px solid red; */
+  
+  
+ 
+}
+.input{
+  position: flex;
+  width: 100%;
+  /* bottom: 10px; */
+  border:2px solid red;
+ 
+}
+.message_text{
+  float: left;
+  /* margin-left: 10px; */
+  width: 61%;
+  height: 40px;
+  /* box-shadow:3px 3px 12px -1px #968f96db; */
+  border-radius:10px;
+  font-size: 14px;
+  background-color: rgb(236, 238, 238);
+  text-align: center;
+  color: #505050
+  }
+.btn{
+  
+  /* margin-left: 10px; */
+  float: right;
+  height: 80rpx;
+  width: 40%;
+  background-color: rgba(174, 78, 187, 0.685);
+  padding: 0%;
+  /* line-height: 31px; */
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  /* cursor: pointer; */
+  /* border-radius:8px;*/
+  box-shadow:3px 3px 12px -1px #968f96db;
+  /* border: 1px solid blue */
+}
+
+
+
+form {
+
+  /* border:solid 2px yellow; */
+  width:70%;
+  height:60%;
+
+}
+
+.btn-d{
+
+  /* margin-left: 8px; */
+  height: 31px;
+  width: 10%;
+  background-color: rgb(0, 0, 0);
+  /* line-height: 31px; */
+  color: #fafafa;
+  cursor: pointer;
+  border-radius:8px;
+  box-shadow:3px 3px 12px -1px #968f96db;
+  font-size: 12px;
+  
+}
+ 
+.say{
+  float: right;
+  margin-right: 30px;
+  width: 30px;
+  height: 29px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #9f2dee;
+  cursor: pointer;
+  border-radius:7px;
+ 
+}
+ 
+ 
+.que{
+  margin-top: 5vh;
+  width: 98%;
+  margin-left: 1%;
+  line-height: 75rpx;
+  margin-bottom: 13vh;
+ /* border:2px solid blue */
+ 
+ 
+}
+ 
+.robort{
+ 
+  width: 85%;
+  margin-top: 60rpx;
+  /* border:2px orange solid; */
+  margin-top: 50rpx;
+ 
+}
+.robort image{
+ margin-bottom: -60px;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 7px;
+  /* border:1rpx solid black; */
+ 
+}
+.robort text{
+  margin-left: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  color:white;
+  margin-bottom: -32px;
+  margin-top:20px;
+}
+.isay{
+ 
+  margin-top: 10px;
+  /* border:2px solid red; */
+  margin-bottom: 20px;
+  /* border:2px red solid; */
+}
+.isay image{
+  float: right;
+  margin-right: -89vw;
+ width: 80rpx;
+ height: 80rpx;
+ border-radius: 7px;
+ background: darkblue 
+
+}
+.isay text{
+  margin-right: 5px;
+  float: right;
+  padding: 15rpx;
+  border-radius: 8px;
+  /* border:1px solid blue; */
+  font-size: 14px;
+  
+  color: black;
+ 
+ 
+ 
+}
+/* 消息列表 样式设计 */
+.l-i{
+  width: 30px;
+}
+.l-t{
+  margin-top: 15px;
+  margin-left: 100rpx;
+  border-radius: 5%;
+  background: linear-gradient(to right, #78A8EB, #9D3FE0);
+  /* background-color:lightpink; */
+  padding:2%;
+}
+.r-i{
+  width: 30px;
+  margin-right:0px;
+  
+}
+.r-t{
+  float: right;
+  margin-right: 100rpx;
+  border-radius:20%;
+  /* background-color: orange; */
+  background: linear-gradient(to right, #E6BCE3, #F59FA6);
+ 
+}
+from {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  /* border:10px soild blue; */
+}
+.click_part{
+  width:40%;
+  height:20%;
+
+}
+.click_btn{
+  float: right;
+  height: 80rpx;
+  width: 40%;
+  background-color: rgba(174, 78, 187, 0.685);
+  padding: 0%;
+  /* line-height: 31px; */
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  /* cursor: pointer; */
+  /* border-radius:8px;*/
+  box-shadow:3px 3px 12px -1px #968f96db;
+  /* border: 1px solid blue */
+  opacity: 0.5;
+}
+
+.scroll_view{
+  border:1px solid red;
+  
+}
